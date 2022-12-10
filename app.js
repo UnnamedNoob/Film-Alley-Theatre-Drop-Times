@@ -1,14 +1,25 @@
-const http = require('http');
+
+const webscraper = require('./serverfiles/webscraper.js');
+
+const express = require('express');
+const app = express();
 const PORT = 8080;
-const webscraper = require('./serverfiles/webscraper')
 
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
 });
 
-server.listen(PORT, () => {
+// make get request that takes a date with format 2022-12-05 and returns a json object with all the showtimes for that day
+app.get('/showtimes/:date', async (req, res) => {
+  let date = req.params.date;
+  let showtimes = await webscraper.getCompiledShowtimeData(date);
+  res.json(showtimes);
+});
+
+app.listen(PORT, () => {
   console.log(`Server running at PORT:${PORT}/`);
 });
+
+
+
+

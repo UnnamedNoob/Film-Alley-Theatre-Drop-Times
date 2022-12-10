@@ -1,7 +1,12 @@
 
 const puppeteer = require('puppeteer')
+const datahandler = require('./datahandler.js')
 const cliProgress = require('cli-progress');
 const htmlparse = require('node-html-parser')
+const moment = require('moment')
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+
+const timeToUpdateData = 1000*45 // refreshes saved data every 1 minute
 
 const theatreSeatCounts = {
     1: 101,
@@ -14,32 +19,9 @@ const theatreSeatCounts = {
     8: 78,
 }
 
-let moviesToday = {}
-
-
-class Movie {
-
-    constructor(title, icon, starttime, endtime, presold){
-        this.title = title
-        this.icon = icon
-        this.startTime = starttime
-        this.endTime = endtime 
-        this.ticketsSold = presold
-    }
-}
-
-
-async function createTodaysShowtimes(){
-    let showingsPage = await fetchRenderedPage('https://terrell.filmalley.net/showtimes')
-    createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate('2022-12-05'))
-    // getSeatingForShowing('https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=187846')
-}
-createTodaysShowtimes()
-
-async function createListingsFromShowtimePage(html){
+async function createListingsFromShowtimePage(html, date){
     let movies = html.querySelector('#now').querySelectorAll('.movie')
     let final = []
-    console.log("\nFetching showtimes for Monday, December 05 \n")
     let bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
     bar1.start(movies.length, 0);
     let moviesStarted = 0
@@ -48,11 +30,19 @@ async function createListingsFromShowtimePage(html){
         let showings = movie.querySelectorAll('.showtime')
         let showtimes = {}
         for (let showing of showings){
-            if (showing.classList.contains('disabled')){moviesStarted++;continue};
-            let startTime = showing.querySelector('.tixLink').textContent.trim()
+            let startTime
+            if (showing.classList.contains('disabled')){
+                startTime = showing.querySelector('span').textContent.trim()
+                showtimes[startTime] = {
+                    available:false
+                }
+                continue
+            };
+            startTime = showing.querySelector('.tixLink').textContent.trim()
             let seatingURL = showing.querySelector('.tixLink').getAttribute('href')
             let movieStats = await getSeatingForShowing(showing.querySelector('.tixLink').getAttribute('href'))
             showtimes[startTime] = {
+                available:true,
                 seatingURL,
                 ticketsSold: movieStats.soldSeats,
                 theater: findTheaterFromSeatCount(movieStats.totalSeats)
@@ -66,6 +56,7 @@ async function createListingsFromShowtimePage(html){
     let totalSold = 0
     let highestSoldMovie
     let highestSoldSeats = 0
+    let highestSoldTheater = 0
     for (let movie of final){
         for (let showtime in movie.showtimes){
             let toAddSeats = theatreSeatCounts[movie.showtimes[showtime].theater]
@@ -75,12 +66,16 @@ async function createListingsFromShowtimePage(html){
             if (toAddSold > highestSoldSeats){
                 highestSoldSeats = toAddSold
                 highestSoldMovie = movie.title
+                highestSoldTheater = movie.showtimes[showtime].theater
             }
         }
     }
     console.log(`\nTotal showings already started: \n${moviesStarted}\n`)
     console.log(`\nTotal seats sold:\n${totalSold} out of ${totalSeats}\n`)
-    console.log(`\nHighest sold movie:\n${highestSoldMovie} with ${highestSoldSeats} seats sold`)
+    console.log(`\nHighest sold movie:\n${highestSoldMovie} with ${highestSoldSeats} seats sold in theater ${highestSoldTheater} at ${Object.keys(final.find(movie => movie.title === highestSoldMovie).showtimes)[0]}\n`)
+    let savedData = await datahandler.getSavedShowingDetails(date)
+    datahandler.saveShowingDetails(date, final)
+    return final
 }
 
 
@@ -121,5 +116,21 @@ function findTheaterFromSeatCount(count){
     }
 }
 
-module.exports = {}
+async function getCompiledShowtimeData(date){
+    return await (datahandler.getSavedShowingDetails(date))
+}
+
+setInterval(async()=>{
+    console.log('go')
+    let date = moment().format('YYYY-MM-DD')
+    let result = await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
+},timeToUpdateData)    
+
+async function test(){
+    let date = moment().format('YYYY-MM-DD')
+    let result = await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
+}
+
+test()
+module.exports = {getCompiledShowtimeData}
 
