@@ -48,7 +48,7 @@ async function createListingsFromShowtimePage(html, date){
                 theater: findTheaterFromSeatCount(movieStats.totalSeats)
             }
         }
-        final.push({title,showtimes})
+        final.push({[title]:showtimes})
         bar1.increment()
     }
     bar1.stop()
@@ -70,10 +70,6 @@ async function createListingsFromShowtimePage(html, date){
             }
         }
     }
-    console.log(`\nTotal showings already started: \n${moviesStarted}\n`)
-    console.log(`\nTotal seats sold:\n${totalSold} out of ${totalSeats}\n`)
-    console.log(`\nHighest sold movie:\n${highestSoldMovie} with ${highestSoldSeats} seats sold in theater ${highestSoldTheater} at ${Object.keys(final.find(movie => movie.title === highestSoldMovie).showtimes)[0]}\n`)
-    let savedData = await datahandler.getSavedShowingDetails(date)
     datahandler.saveShowingDetails(date, final)
     return final
 }

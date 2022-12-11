@@ -18,23 +18,25 @@ async function saveShowingDetails(date, data){
         console.log('error when parsing json')
     }
     for (let movie of data){
-        for (let showtime in movie.showtimes){
+        let title = Object.keys(movie)[0]
+        for (let showtime in movie['showtimes']){
+            console.log(showtime)
             if (showtime.available === false){
-                if (storage[date][movie.title][showtime] != null){
-                    storage[date][movie.title][showtime] = {
+                if (storage[date][title][showtime] != null){
+                    storage[date][title][showtime] = {
                         available:false,
-                        seatingURL: storage[date][movie.title][showtime].seatingURL,
-                        ticketsSold: storage[date][movie.title][showtime].ticketsSold,
-                        theater: storage[date][movie.title][showtime].theater
+                        seatingURL: storage[date][title][showtime].seatingURL,
+                        ticketsSold: storage[date][title][showtime].ticketsSold,
+                        theater: storage[date][title][showtime].theater
 
                     }
                 }else{
-                    storage[date][movie.title][showtime] = {
+                    storage[date][title][showtime] = {
                         available:false
                     }
                 }
             }else{
-                storage[date][movie.title][showtime] = {
+                storage[date][title][showtime] = {
                     available:true,
                     seatingURL: showtime.seatingURL,
                     ticketsSold: showtime.ticketsSold,
@@ -43,6 +45,7 @@ async function saveShowingDetails(date, data){
             }
         }
     }
+    console.log(storage)
     let result = fs.writeFileSync('storage.json', JSON.stringify(storage))
     
 }
