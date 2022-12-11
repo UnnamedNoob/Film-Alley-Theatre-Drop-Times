@@ -6,7 +6,7 @@ const htmlparse = require('node-html-parser')
 const moment = require('moment')
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
-const timeToUpdateData = 1000*45 // refreshes saved data every 1 minute
+const timeToUpdateData = 1000*60 // refreshes saved data every 1 minute
 
 const theatreSeatCounts = {
     1: 101,
@@ -20,13 +20,12 @@ const theatreSeatCounts = {
 }
 
 async function createListingsFromShowtimePage(html, date){
+    console.log(`Starting scan for showings on ${date}`)
     let movies = html.querySelector('#now').querySelectorAll('.movie')
-    let final = []
-    let bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
-    bar1.start(movies.length, 0);
-    let moviesStarted = 0
+    let final = {}
     for (let movie of movies){
         let title = movie.querySelector('.movie-info h3').textContent
+        let length = movie.querySelector('.movie-info h4').textContent.split('| ')[1].split(' min')[0]
         let showings = movie.querySelectorAll('.showtime')
         let showtimes = {}
         for (let showing of showings){
@@ -44,31 +43,12 @@ async function createListingsFromShowtimePage(html, date){
             showtimes[startTime] = {
                 available:true,
                 seatingURL,
+                length,
                 ticketsSold: movieStats.soldSeats,
                 theater: findTheaterFromSeatCount(movieStats.totalSeats)
             }
         }
-        final.push({[title]:showtimes})
-        bar1.increment()
-    }
-    bar1.stop()
-    let totalSeats = 0
-    let totalSold = 0
-    let highestSoldMovie
-    let highestSoldSeats = 0
-    let highestSoldTheater = 0
-    for (let movie of final){
-        for (let showtime in movie.showtimes){
-            let toAddSeats = theatreSeatCounts[movie.showtimes[showtime].theater]
-            let toAddSold = movie.showtimes[showtime].ticketsSold
-            totalSeats += toAddSeats
-            totalSold += toAddSold
-            if (toAddSold > highestSoldSeats){
-                highestSoldSeats = toAddSold
-                highestSoldMovie = movie.title
-                highestSoldTheater = movie.showtimes[showtime].theater
-            }
-        }
+        final[title] = showtimes
     }
     datahandler.saveShowingDetails(date, final)
     return final
@@ -84,17 +64,24 @@ async function fetchRenderedPage(url){
 }
 
 async function getSeatingForShowing(url){
-    let browser = await puppeteer.launch({headless:true});
-    let page = await browser.newPage();
-    await page.goto(url);
-    await page.waitForSelector('.seat')
-    let data = await page.evaluate(() => document.querySelector('*').outerHTML);    
-    let parsedhtml = htmlparse.parse(data)
-    let totalSeats = parsedhtml.querySelectorAll('.seat').length
-    let soldSeats = parsedhtml.querySelectorAll('.unavailableSeat').length
-    let brokenSeats = parsedhtml.querySelectorAll('.brokenSeat').length
-    browser.close();
-    return {totalSeats,soldSeats,brokenSeats}
+    try{
+
+    
+        let browser = await puppeteer.launch({headless:true});
+        let page = await browser.newPage();
+        await page.goto(url);
+        await page.waitForSelector('.seat')
+        let data = await page.evaluate(() => document.querySelector('*').outerHTML);    
+        let parsedhtml = htmlparse.parse(data)
+        let totalSeats = parsedhtml.querySelectorAll('.seat').length
+        let soldSeats = parsedhtml.querySelectorAll('.unavailableSeat').length
+        let brokenSeats = parsedhtml.querySelectorAll('.brokenSeat').length
+        browser.close();
+        return {totalSeats,soldSeats,brokenSeats}
+
+        }catch{
+            return
+        }
 }
 
 async function fetchShowtimeHTMLFromDate(date){
@@ -117,13 +104,15 @@ async function getCompiledShowtimeData(date){
 }
 
 setInterval(async()=>{
-    console.log('go')
     let date = moment().format('YYYY-MM-DD')
+    date = "2022-12-11"
     let result = await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
 },timeToUpdateData)    
 
 async function test(){
     let date = moment().format('YYYY-MM-DD')
+    date = "2022-12-11"
+
     let result = await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
 }
 
