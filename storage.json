@@ -294,6 +294,137 @@
             }
         }
     },
+    "2022-12-12": {
+        "Violent Night ST-IMMERSIVE": {
+            "6:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188562",
+                "length": "101",
+                "ticketsSold": 4,
+                "theater": "7"
+            }
+        },
+        "Violent Night": {
+            "11:10 am": {
+                "available": false
+            },
+            "2:00 pm": {
+                "available": false
+            },
+            "4:45 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188560",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "5"
+            },
+            "7:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188557",
+                "length": "101",
+                "ticketsSold": 7,
+                "theater": "5"
+            }
+        },
+        "Strange World": {
+            "11:00 am": {
+                "available": false
+            },
+            "1:45 pm": {
+                "available": false
+            },
+            "4:30 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188553",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "4"
+            },
+            "7:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188554",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "4"
+            }
+        },
+        "Devotion": {
+            "11:30 am": {
+                "available": false
+            },
+            "3:00 pm": {
+                "available": false
+            },
+            "6:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188549",
+                "length": "138",
+                "ticketsSold": 0,
+                "theater": "1"
+            },
+            "7:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188703",
+                "length": "138",
+                "ticketsSold": 0,
+                "theater": "8"
+            }
+        },
+        "Black Panther: Wakanda Forever ST-IMMERSIVE": {
+            "2:50 pm": {
+                "available": false
+            }
+        },
+        "Black Panther: Wakanda Forever": {
+            "10:30 am": {
+                "available": false
+            },
+            "10:45 am": {
+                "available": false
+            },
+            "11:15 am": {
+                "available": false
+            },
+            "2:15 pm": {
+                "available": false
+            },
+            "2:30 pm": {
+                "available": false
+            },
+            "3:30 pm": {
+                "available": false
+            },
+            "6:05 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188541",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "6"
+            },
+            "6:20 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188542",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            }
+        },
+        "Black Adam": {
+            "12:00 pm": {
+                "available": false
+            },
+            "3:15 pm": {
+                "available": false
+            },
+            "7:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188355",
+                "length": "124",
+                "ticketsSold": 0,
+                "theater": "2"
+            }
+        }
+    },
     "2022-12-15": {
         "Avatar: The Way of Water": {
             "3:30 pm": {
