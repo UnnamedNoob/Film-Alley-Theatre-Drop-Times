@@ -431,28 +431,28 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188030",
                 "length": "190",
-                "ticketsSold": 19,
+                "ticketsSold": 25,
                 "theater": "6"
             },
             "4:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188427",
                 "length": "190",
-                "ticketsSold": 16,
+                "ticketsSold": 28,
                 "theater": "4"
             },
             "7:30 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188031",
                 "length": "190",
-                "ticketsSold": 72,
+                "ticketsSold": 85,
                 "theater": "6"
             },
             "8:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188428",
                 "length": "190",
-                "ticketsSold": 32,
+                "ticketsSold": 57,
                 "theater": "4"
             }
         },
@@ -468,7 +468,7 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188029",
                 "length": "190",
-                "ticketsSold": 31,
+                "ticketsSold": 32,
                 "theater": "1"
             }
         },
@@ -477,15 +477,859 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188026",
                 "length": "190",
-                "ticketsSold": 30,
+                "ticketsSold": 45,
                 "theater": "7"
             },
             "7:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188027",
                 "length": "190",
+                "ticketsSold": 101,
+                "theater": "7"
+            }
+        },
+        "Violent Night": {
+            "12:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188713",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "5"
+            },
+            "3:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188714",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "5"
+            },
+            "6:20 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188715",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "5"
+            }
+        },
+        "Strange World": {
+            "11:15 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188717",
+                "length": "102",
+                "ticketsSold": 5,
+                "theater": "8"
+            },
+            "1:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188718",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "4:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188719",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "7:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188720",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "8"
+            }
+        },
+        "Devotion": {
+            "11:45 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188707",
+                "length": "138",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "3:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188708",
+                "length": "138",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "6:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188709",
+                "length": "138",
+                "ticketsSold": 0,
+                "theater": "2"
+            }
+        },
+        "Black Panther: Wakanda Forever ST-IMMERSIVE": {
+            "11:00 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188721",
+                "length": "161",
+                "ticketsSold": 0,
+                "theater": "7"
+            }
+        },
+        "Black Panther: Wakanda Forever": {
+            "11:30 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188716",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "6"
+            },
+            "12:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188710",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "4"
+            },
+            "2:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188711",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            },
+            "6:05 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188712",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            }
+        },
+        "Black Adam": {
+            "12:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188706",
+                "length": "124",
+                "ticketsSold": 0,
+                "theater": "1"
+            }
+        }
+    },
+    "2022-12-13": {
+        "Violent Night ST-IMMERSIVE": {
+            "6:30 pm": {
+                "available": false
+            }
+        },
+        "Violent Night": {
+            "11:10 am": {
+                "available": false
+            },
+            "2:00 pm": {
+                "available": false
+            },
+            "5:00 pm": {
+                "available": false
+            },
+            "7:45 pm": {
+                "available": false
+            }
+        },
+        "Strange World": {
+            "11:00 am": {
+                "available": false
+            },
+            "1:45 pm": {
+                "available": false
+            },
+            "4:30 pm": {
+                "available": false
+            },
+            "7:30 pm": {
+                "available": false
+            }
+        },
+        "Devotion": {
+            "11:15 am": {
+                "available": false
+            },
+            "3:00 pm": {
+                "available": false
+            },
+            "6:20 pm": {
+                "available": false
+            },
+            "7:15 pm": {
+                "available": false
+            }
+        },
+        "Black Panther: Wakanda Forever ST-IMMERSIVE": {
+            "10:45 am": {
+                "available": false
+            },
+            "2:30 pm": {
+                "available": false
+            }
+        },
+        "Black Panther: Wakanda Forever": {
+            "11:30 am": {
+                "available": false
+            },
+            "12:00 pm": {
+                "available": false
+            },
+            "2:45 pm": {
+                "available": false
+            },
+            "3:15 pm": {
+                "available": false
+            },
+            "6:05 pm": {
+                "available": false
+            },
+            "6:45 pm": {
+                "available": false
+            }
+        },
+        "Black Adam": {
+            "2:15 pm": {
+                "available": false
+            },
+            "3:45 pm": {
+                "available": false
+            },
+            "7:00 pm": {
+                "available": false
+            }
+        }
+    },
+    "2022-12-14": {
+        "Violent Night ST-IMMERSIVE": {
+            "6:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188625",
+                "length": "101",
+                "ticketsSold": 5,
+                "theater": "7"
+            }
+        },
+        "Violent Night": {
+            "11:15 am": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188624",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "6"
+            },
+            "3:15 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188623",
+                "length": "101",
+                "ticketsSold": 2,
+                "theater": "8"
+            },
+            "6:05 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188622",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "5"
+            },
+            "7:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188621",
+                "length": "101",
+                "ticketsSold": 6,
+                "theater": "8"
+            }
+        },
+        "Strange World": {
+            "11:00 am": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188617",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "4"
+            },
+            "1:45 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188618",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "4"
+            },
+            "4:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188619",
+                "length": "102",
+                "ticketsSold": 4,
+                "theater": "4"
+            },
+            "7:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188620",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "4"
+            }
+        },
+        "Devotion": {
+            "11:45 am": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188616",
+                "length": "138",
+                "ticketsSold": 0,
+                "theater": "1"
+            },
+            "3:00 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188615",
+                "length": "138",
+                "ticketsSold": 0,
+                "theater": "1"
+            },
+            "6:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188614",
+                "length": "138",
+                "ticketsSold": 0,
+                "theater": "1"
+            }
+        },
+        "Black Panther: Wakanda Forever ST-IMMERSIVE": {
+            "10:30 am": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188612",
+                "length": "161",
+                "ticketsSold": 0,
+                "theater": "7"
+            },
+            "2:45 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188613",
+                "length": "161",
+                "ticketsSold": 0,
+                "theater": "7"
+            }
+        },
+        "Black Panther: Wakanda Forever": {
+            "10:45 am": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188606",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            },
+            "11:30 am": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188611",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "2:15 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188607",
+                "length": "161 Min",
+                "ticketsSold": 2,
+                "theater": "6"
+            },
+            "2:30 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188608",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            },
+            "6:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188609",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "6"
+            },
+            "6:20 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188610",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            }
+        },
+        "Black Adam": {
+            "12:00 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188603",
+                "length": "124",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "3:30 pm": {
+                "available": false,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188604",
+                "length": "124",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "7:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188605",
+                "length": "124",
+                "ticketsSold": 0,
+                "theater": "2"
+            }
+        }
+    },
+    "2022-12-16": {
+        "Avatar: The Way of Water": {
+            "10:30 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188036",
+                "length": "190",
+                "ticketsSold": 15,
+                "theater": "6"
+            },
+            "12:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188421",
+                "length": "190",
+                "ticketsSold": 25,
+                "theater": "4"
+            },
+            "1:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188424",
+                "length": "190",
+                "ticketsSold": 27,
+                "theater": "5"
+            },
+            "2:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188037",
+                "length": "190",
+                "ticketsSold": 34,
+                "theater": "6"
+            },
+            "4:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188422",
+                "length": "190",
+                "ticketsSold": 34,
+                "theater": "4"
+            },
+            "5:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188425",
+                "length": "190",
+                "ticketsSold": 22,
+                "theater": "5"
+            },
+            "7:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188038",
+                "length": "190",
+                "ticketsSold": 88,
+                "theater": "6"
+            },
+            "8:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188423",
+                "length": "190",
+                "ticketsSold": 70,
+                "theater": "4"
+            },
+            "9:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188426",
+                "length": "190",
+                "ticketsSold": 39,
+                "theater": "5"
+            },
+            "11:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188039",
+                "length": "190",
+                "ticketsSold": 29,
+                "theater": "6"
+            }
+        },
+        "Avatar: The Way of Water 3D": {
+            "11:00 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188040",
+                "length": "190",
+                "ticketsSold": 5,
+                "theater": "1"
+            },
+            "3:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188041",
+                "length": "190",
+                "ticketsSold": 20,
+                "theater": "1"
+            },
+            "7:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188042",
+                "length": "190",
+                "ticketsSold": 49,
+                "theater": "1"
+            }
+        },
+        "Avatar: The Way of Water ST-IMMERSIVE 3D": {
+            "10:00 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188032",
+                "length": "190",
+                "ticketsSold": 4,
+                "theater": "7"
+            },
+            "2:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188033",
+                "length": "190",
+                "ticketsSold": 49,
+                "theater": "7"
+            },
+            "6:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188034",
+                "length": "190",
+                "ticketsSold": 98,
+                "theater": "7"
+            },
+            "10:40 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188035",
+                "length": "190",
+                "ticketsSold": 56,
+                "theater": "7"
+            }
+        },
+        "Violent Night": {
+            "10:45 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188740",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "1:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188741",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "4:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188742",
+                "length": "101",
+                "ticketsSold": 2,
+                "theater": "8"
+            },
+            "7:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188743",
+                "length": "101",
+                "ticketsSold": 8,
+                "theater": "8"
+            },
+            "10:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188744",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "8"
+            }
+        },
+        "Strange World": {
+            "2:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188722",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "4:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188723",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "7:20 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188724",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "10:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188725",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            }
+        },
+        "Black Panther: Wakanda Forever": {
+            "11:15 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188745",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            },
+            "3:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188746",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            },
+            "6:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188747",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            },
+            "10:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188748",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            }
+        }
+    },
+    "2022-12-17": {
+        "Avatar: The Way of Water": {
+            "10:30 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188044",
+                "length": "190",
+                "ticketsSold": 39,
+                "theater": "6"
+            },
+            "12:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188429",
+                "length": "190",
+                "ticketsSold": 33,
+                "theater": "4"
+            },
+            "1:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188452",
+                "length": "190",
+                "ticketsSold": 9,
+                "theater": "5"
+            },
+            "2:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188052",
+                "length": "190",
+                "ticketsSold": 81,
+                "theater": "6"
+            },
+            "4:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188430",
+                "length": "190",
+                "ticketsSold": 43,
+                "theater": "4"
+            },
+            "5:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188453",
+                "length": "190",
+                "ticketsSold": 28,
+                "theater": "5"
+            },
+            "7:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188055",
+                "length": "190",
+                "ticketsSold": 77,
+                "theater": "6"
+            },
+            "8:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188431",
+                "length": "190",
+                "ticketsSold": 51,
+                "theater": "4"
+            },
+            "9:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188454",
+                "length": "190",
+                "ticketsSold": 20,
+                "theater": "5"
+            },
+            "11:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188058",
+                "length": "190",
+                "ticketsSold": 6,
+                "theater": "6"
+            }
+        },
+        "Avatar: The Way of Water 3D": {
+            "11:00 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188045",
+                "length": "190",
+                "ticketsSold": 15,
+                "theater": "1"
+            },
+            "3:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188053",
+                "length": "190",
+                "ticketsSold": 6,
+                "theater": "1"
+            },
+            "7:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188056",
+                "length": "190",
+                "ticketsSold": 47,
+                "theater": "1"
+            }
+        },
+        "Avatar: The Way of Water ST-IMMERSIVE 3D": {
+            "10:00 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188043",
+                "length": "190",
+                "ticketsSold": 42,
+                "theater": "7"
+            },
+            "2:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188051",
+                "length": "190",
+                "ticketsSold": 85,
+                "theater": "7"
+            },
+            "6:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188054",
+                "length": "190",
                 "ticketsSold": 95,
                 "theater": "7"
+            },
+            "10:40 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188057",
+                "length": "190",
+                "ticketsSold": 20,
+                "theater": "7"
+            }
+        },
+        "Violent Night": {
+            "11:20 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188749",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "2:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188750",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "4:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188751",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "7:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188752",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "8"
+            },
+            "10:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188753",
+                "length": "101",
+                "ticketsSold": 0,
+                "theater": "8"
+            }
+        },
+        "Strange World": {
+            "10:45 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188735",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "1:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188734",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "4:15 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188733",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "7:20 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188732",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            },
+            "10:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188731",
+                "length": "102",
+                "ticketsSold": 0,
+                "theater": "2"
+            }
+        },
+        "Black Panther: Wakanda Forever": {
+            "11:15 am": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188736",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            },
+            "3:00 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188737",
+                "length": "161 Min",
+                "ticketsSold": 4,
+                "theater": "3"
+            },
+            "6:45 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188738",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
+            },
+            "10:30 pm": {
+                "available": true,
+                "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188739",
+                "length": "161 Min",
+                "ticketsSold": 0,
+                "theater": "3"
             }
         }
     }

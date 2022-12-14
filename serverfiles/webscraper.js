@@ -105,13 +105,13 @@ async function getCompiledShowtimeData(date){
 
 setInterval(async()=>{
     let date = moment().format('YYYY-MM-DD')
-    date = "2022-12-12"
+    date = "2022-12-17"
     let result = await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
 },timeToUpdateData)    
 
 async function test(){
     let date = moment().format('YYYY-MM-DD')
-    date = "2022-12-12"
+    date = "2022-12-17"
 
     let result = await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
 }

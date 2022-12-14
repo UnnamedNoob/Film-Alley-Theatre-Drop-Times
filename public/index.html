@@ -3,9 +3,33 @@
 <html>
     <head>
         <title>My First Web Page</title>
+        <script></script>
+        <script src="/index.js" defer></script>
+        <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <h1>My First Web Page</h1>
-        <p>My first paragraph.</p>
+        <input id="date-selector"type="date">
+        <br>
+        <label>Sort By</label>
+        <select name="sort" id="sort-selector">
+            <option value="Movie">Movie</option>
+            <option value="sales">Ticket Sales</option>
+            <option value="time">Start Time</option>
+            <option value="theater">Theater</option>
+            <option value="availability">Availability</option>
+        </select>
+        <br>
+        <label for="hide-unavailable-shows">Hide Unavailable Showings</label>
+        <input type="checkbox" name="hide-unavailable-shows" id="hide-unavailable-shows">
+        <br>
+        <table id="sales-table">
+            <tr id="headers">
+                <th>Movie</th>
+                <th>Start Time</th>
+                <th>Theater</th>
+                <th>Tickets Sold</th>
+                <th>Sales Available</th>
+            </tr>
+        </table>
     </body>
 </html>
