@@ -56,7 +56,7 @@ async function createListingsFromShowtimePage(html, date){
 
 async function getSeatingForShowing(url){
     try{
-        let browser = await puppeteer.launch({headless:true});
+        let browser = await puppeteer.launch({headless:true,args:["--no-sandbox"]});
         let page = await browser.newPage();
         await page.goto(url);
         await page.waitForSelector('.seat')
@@ -68,7 +68,8 @@ async function getSeatingForShowing(url){
         browser.close();
         return {totalSeats,soldSeats,brokenSeats}
 
-    }catch{
+    }catch(e){
+        console.log(e)
         console.log("Error when fetching seats")
         return
     }
