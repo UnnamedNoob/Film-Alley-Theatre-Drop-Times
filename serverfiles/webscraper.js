@@ -6,8 +6,8 @@ const htmlparse = require('node-html-parser')
 const moment = require('moment')
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
-const timeToUpdateData = 1000*60 // refreshes saved data every 1 minute
-
+const timeToUpdateDataDaily = 1000*60 // refreshes saved data every 1 minute
+const timeToUpdateDataWeekly = 1000*60 // refreshes saved data every 1 week
 const theatreSeatCounts = {
     1: 101,
     2: 85,
@@ -54,19 +54,8 @@ async function createListingsFromShowtimePage(html, date){
     return final
 }
 
-
-async function fetchRenderedPage(url){
-    let browser = await puppeteer.launch({headless:true});
-    let page = await browser.newPage();
-    await page.goto(url);
-    let data = await page.evaluate(() => document.querySelector('*').outerHTML);    
-    return(htmlparse.parse(data))
-}
-
 async function getSeatingForShowing(url){
     try{
-
-    
         let browser = await puppeteer.launch({headless:true});
         let page = await browser.newPage();
         await page.goto(url);
@@ -79,9 +68,10 @@ async function getSeatingForShowing(url){
         browser.close();
         return {totalSeats,soldSeats,brokenSeats}
 
-        }catch{
-            return
-        }
+    }catch{
+        console.log("Error when fetching seats")
+        return
+    }
 }
 
 async function fetchShowtimeHTMLFromDate(date){
@@ -105,15 +95,22 @@ async function getCompiledShowtimeData(date){
 
 setInterval(async()=>{
     let date = moment().format('YYYY-MM-DD')
-    date = "2022-12-17"
-    let result = await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
-},timeToUpdateData)    
+    await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
+},timeToUpdateDataDaily)    
+
+let weeklyUpdateOffset = 1
+setInterval(async()=>{
+    let date = moment().add(weeklyUpdateOffset,'days').format('YYYY-MM-DD')
+    await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
+    weeklyUpdateOffset++
+    if (weeklyUpdateOffset > 7){
+        weeklyUpdateOffset = 1
+    }
+},timeToUpdateDataWeekly)
 
 async function test(){
     let date = moment().format('YYYY-MM-DD')
-    date = "2022-12-17"
-
-    let result = await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
+    await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
 }
 
 test()

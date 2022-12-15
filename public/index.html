@@ -5,31 +5,29 @@
         <title>My First Web Page</title>
         <script></script>
         <script src="/index.js" defer></script>
+        <script src="/sortable.min.js" defer></script>
+        <script src="/moment.min.js"></script>
+        <link rel="stylesheet" href="/sortable-theme-bootstrap.css" />
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
         <input id="date-selector"type="date">
         <br>
-        <label>Sort By</label>
-        <select name="sort" id="sort-selector">
-            <option value="Movie">Movie</option>
-            <option value="sales">Ticket Sales</option>
-            <option value="time">Start Time</option>
-            <option value="theater">Theater</option>
-            <option value="availability">Availability</option>
-        </select>
-        <br>
         <label for="hide-unavailable-shows">Hide Unavailable Showings</label>
         <input type="checkbox" name="hide-unavailable-shows" id="hide-unavailable-shows">
         <br>
-        <table id="sales-table">
-            <tr id="headers">
-                <th>Movie</th>
-                <th>Start Time</th>
-                <th>Theater</th>
-                <th>Tickets Sold</th>
-                <th>Sales Available</th>
-            </tr>
+        <table id="sales-table" class="sortable-bootstrap"data-sortable>
+            <thead>
+                <tr>
+                    <th data-sortable-type="alpha">Movie</th>
+                    <th data-sortable-type="numeric">Start Time</th>
+                    <th data-sortable-type="numeric">Theater</th>
+                    <th data-sortable-type="numeric">Tickets Sold</th>
+                    <th data-sortable-type="alpha">Sales Available</th>
+                </tr>
+            </thead>
+            <tbody id="sales-table-body">
+            </tbody>
         </table>
     </body>
 </html>
