@@ -70,8 +70,9 @@ async function getSeatingForShowing(url){
         browser.close();
         return {totalSeats,soldSeats,brokenSeats}
 
-    }catch{
+    }catch(e){
         console.log("Error when fetching seats")
+        console.log(e)
         return
     }
 }

@@ -3,7 +3,7 @@ const webscraper = require('./serverfiles/webscraper.js');
 
 const express = require('express');
 const app = express();
-const PORT = 443;
+const PORT = 80;
 
 // make get request that takes a date with format 2022-12-05 and returns a json object with all the showtimes for that day
 app.get('/showtimes/:date', async (req, res) => {
