@@ -49,6 +49,7 @@ function updateTicketsSoldTable(data){
             let movietd = document.createElement('td')
             let starttimetd = document.createElement('td')
             let theatertd = document.createElement('td')
+            theatertd.classList.add('theatercolumn')
             let ticketstd = document.createElement('td')
             let salesavailabletd = document.createElement('td')
             movietd.innerText = title || "No Data"
@@ -73,7 +74,6 @@ function updateTicketsSoldTable(data){
                 startInMinutes = hour * 60 + minutes
             }
 
-            console.log(startInMinutes)
             starttimetd.setAttribute('data-value', startInMinutes)
             document.querySelector("#sales-table-body").appendChild(tr)
         }    
