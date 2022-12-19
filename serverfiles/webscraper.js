@@ -20,38 +20,40 @@ const theatreSeatCounts = {
 }
 
 async function createListingsFromShowtimePage(html, date){
-    console.log(`Starting scan for showings on ${date}`)
-    let movies = html.querySelector('#now').querySelectorAll('.movie')
-    let final = {}
-    for (let movie of movies){
-        let title = movie.querySelector('.movie-info h3').textContent
-        let length = movie.querySelector('.movie-info h4').textContent.split('| ')[1].split(' min')[0]
-        let showings = movie.querySelectorAll('.showtime')
-        let showtimes = {}
-        for (let showing of showings){
-            let startTime
-            if (showing.classList.contains('disabled')){
-                startTime = showing.querySelector('span').textContent.trim()
+    try{
+        console.log(`Starting scan for showings on ${date}`)
+        let movies = html.querySelector('#now').querySelectorAll('.movie')
+        let final = {}
+        for (let movie of movies){
+            let title = movie.querySelector('.movie-info h3').textContent
+            let length = movie.querySelector('.movie-info h4').textContent.split('| ')[1].split(' min')[0]
+            let showings = movie.querySelectorAll('.showtime')
+            let showtimes = {}
+            for (let showing of showings){
+                let startTime
+                if (showing.classList.contains('disabled')){
+                    startTime = showing.querySelector('span').textContent.trim()
+                    showtimes[startTime] = {
+                        available:false
+                    }
+                    continue
+                };
+                startTime = showing.querySelector('.tixLink').textContent.trim()
+                let seatingURL = showing.querySelector('.tixLink').getAttribute('href')
+                let movieStats = await getSeatingForShowing(showing.querySelector('.tixLink').getAttribute('href'))
                 showtimes[startTime] = {
-                    available:false
+                    available:true,
+                    seatingURL,
+                    length,
+                    ticketsSold: movieStats.soldSeats,
+                    theater: findTheaterFromSeatCount(movieStats.totalSeats)
                 }
-                continue
-            };
-            startTime = showing.querySelector('.tixLink').textContent.trim()
-            let seatingURL = showing.querySelector('.tixLink').getAttribute('href')
-            let movieStats = await getSeatingForShowing(showing.querySelector('.tixLink').getAttribute('href'))
-            showtimes[startTime] = {
-                available:true,
-                seatingURL,
-                length,
-                ticketsSold: movieStats.soldSeats,
-                theater: findTheaterFromSeatCount(movieStats.totalSeats)
             }
+            final[title] = showtimes
         }
-        final[title] = showtimes
-    }
-    datahandler.saveShowingDetails(date, final)
-    return final
+        datahandler.saveShowingDetails(date, final)
+        return final
+    }catch{}
 }
 
 async function getSeatingForShowing(url){
