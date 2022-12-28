@@ -3,7 +3,8 @@ const webscraper = require('./serverfiles/webscraper.js');
 
 const express = require('express');
 const app = express();
-const PORT = 80;
+const PORT = 8080;
+
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');

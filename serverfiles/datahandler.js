@@ -17,9 +17,12 @@ async function saveShowingDetails(date, data){
     }catch{
         console.log('error when parsing json')
     }
+
     for (let movie in data){
         let title = movie
+        let updated = []
         for (let showtime in data[movie]){
+            updated.push(showtime)
             if (storage[date] == null){
                 storage[date] = {}
             }
@@ -39,6 +42,13 @@ async function saveShowingDetails(date, data){
                 showtimeData.available = false
             }
             storage[date][title][showtime] = showtimeData
+        }
+        let showingDetails = await getSavedShowingDetails(date)
+        for (let showtime in showingDetails[title]){
+            // if the showtime is not in the updated list it means it is no longer a showiing and should be removed from the list entirely
+            if (!updated.includes(showtime)){
+                delete storage[date][title][showtime]
+            }
         }
     }
     fs.writeFileSync('storage.json', JSON.stringify(storage,null, 4))
