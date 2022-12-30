@@ -1,4 +1,4 @@
-
+try{
 const puppeteer = require('puppeteer')
 const datahandler = require('./datahandler.js')
 const cliProgress = require('cli-progress');
@@ -122,3 +122,4 @@ async function test(){
 test()
 module.exports = {getCompiledShowtimeData}
 
+}catch{}
