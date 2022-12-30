@@ -78,10 +78,13 @@ async function getSeatingForShowing(url){
 }
 
 async function fetchShowtimeHTMLFromDate(date){
-    let data = await fetch("https://terrell.filmalley.net/actions/moviemanager/performances/get-location-movies?locationId=1359&movieSchedule=1427&showDate="+date,{
-    })
-    let html = await data.text()
-    return htmlparse.parse(html)
+    try{
+        let data = await fetch("https://terrell.filmalley.net/actions/moviemanager/performances/get-location-movies?locationId=1359&movieSchedule=1427&showDate="+date,{})
+        let html = await data.text()
+        return htmlparse.parse(html)
+    }catch{
+        return null
+    }
 }
 
 function findTheaterFromSeatCount(count){
