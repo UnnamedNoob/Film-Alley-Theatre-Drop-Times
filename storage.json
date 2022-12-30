@@ -3562,7 +3562,7 @@
     "2022-12-30": {
         "Babylon": {
             "10:05 am": {
-                "available": true,
+                "available": false,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189004",
                 "length": "188",
                 "ticketsSold": 0,
@@ -3579,7 +3579,7 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189003",
                 "length": "188",
-                "ticketsSold": 0,
+                "ticketsSold": 2,
                 "theater": "5"
             },
             "10:45 pm": {
@@ -3592,14 +3592,14 @@
         },
         "Puss in Boots: The Last Wish": {
             "11:00 am": {
-                "available": true,
+                "available": false,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188997",
                 "length": "102",
                 "ticketsSold": 0,
                 "theater": "4"
             },
             "11:45 am": {
-                "available": true,
+                "available": false,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188994",
                 "length": "102",
                 "ticketsSold": 0,
@@ -3609,41 +3609,41 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188996",
                 "length": "102",
-                "ticketsSold": 0,
+                "ticketsSold": 40,
                 "theater": "4"
             },
             "3:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188995",
                 "length": "102",
-                "ticketsSold": 3,
+                "ticketsSold": 19,
                 "theater": "3"
             },
             "4:45 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188983",
                 "length": "102",
-                "ticketsSold": 3,
+                "ticketsSold": 26,
                 "theater": "4"
             },
             "7:15 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188978",
                 "length": "102",
-                "ticketsSold": 8,
+                "ticketsSold": 48,
                 "theater": "3"
             },
-            "10:00 pm": {
+            "11:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189006",
                 "length": "102",
                 "ticketsSold": 0,
-                "theater": "3"
+                "theater": "6"
             }
         },
         "I Wanna Dance with Somebody": {
             "10:45 am": {
-                "available": true,
+                "available": false,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188999",
                 "length": "2",
                 "ticketsSold": 0,
@@ -3653,14 +3653,14 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189000",
                 "length": "2",
-                "ticketsSold": 2,
+                "ticketsSold": 5,
                 "theater": "2"
             },
             "6:15 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189001",
                 "length": "2",
-                "ticketsSold": 0,
+                "ticketsSold": 6,
                 "theater": "2"
             },
             "9:30 pm": {
@@ -3673,7 +3673,7 @@
         },
         "Avatar: The Way of Water": {
             "10:30 am": {
-                "available": true,
+                "available": false,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188992",
                 "length": "190",
                 "ticketsSold": 0,
@@ -3683,34 +3683,34 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188990",
                 "length": "190",
-                "ticketsSold": 9,
+                "ticketsSold": 73,
                 "theater": "6"
             },
             "7:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188993",
                 "length": "190",
-                "ticketsSold": 6,
+                "ticketsSold": 66,
                 "theater": "6"
             },
             "7:45 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188991",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 43,
                 "theater": "4"
             },
-            "11:00 pm": {
+            "10:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189009",
                 "length": "190",
-                "ticketsSold": 0,
-                "theater": "6"
+                "ticketsSold": 8,
+                "theater": "3"
             }
         },
         "Avatar: The Way of Water 3D": {
             "11:30 am": {
-                "available": true,
+                "available": false,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188987",
                 "length": "190",
                 "ticketsSold": 0,
@@ -3720,20 +3720,20 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188988",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 29,
                 "theater": "1"
             },
             "8:30 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188989",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 9,
                 "theater": "1"
             }
         },
         "Avatar: The Way of Water ST-IMMERSIVE 3D": {
             "10:00 am": {
-                "available": true,
+                "available": false,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188986",
                 "length": "190",
                 "ticketsSold": 6,
@@ -3743,17 +3743,17 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188985",
                 "length": "190",
-                "ticketsSold": 3,
+                "ticketsSold": 84,
                 "theater": "7"
             },
             "6:05 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188984",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 62,
                 "theater": "7"
             },
-            "10:15 pm": {
+            "10:30 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189008",
                 "length": "190",
@@ -3763,7 +3763,7 @@
         },
         "Violent Night": {
             "11:15 am": {
-                "available": true,
+                "available": false,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188982",
                 "length": "101",
                 "ticketsSold": 0,
@@ -3787,7 +3787,7 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=188979",
                 "length": "101",
-                "ticketsSold": 0,
+                "ticketsSold": 12,
                 "theater": "8"
             },
             "10:50 pm": {
