@@ -54,7 +54,7 @@ function updateTicketsSoldTable(data, sortByStart=true){
         let round = 0
         let lastTime = 0
         for (let time in sortedTimes){
-            if (time-lastTime >= 70){
+            if (time-lastTime >= 65){
                 round++
                 rounds[round] = [time]
             }else{
@@ -103,7 +103,12 @@ function updateTicketsSoldTable(data, sortByStart=true){
                 starttimetd.innerText = showtime || "No Data"
                 endtimetd.innerText = moment(showtime, ["h:mm a"]).add(Number(data[movie][showtime].length)+10, "minutes").format("h:mm a")
                 theatertd.innerText = showtimeData.theater || "No Data"
-                ticketstd.innerText = ticketsSold
+                if (ticketsSold === isNaN(ticketsSold)){
+                    ticketsSold = 0
+                    ticketstd.innerText = "No Data"
+                }else{
+                    ticketstd.innerText = ticketsSold
+                }
                 tr.appendChild(movietd)
                 tr.appendChild(starttimetd)
                 tr.appendChild(endtimetd)
