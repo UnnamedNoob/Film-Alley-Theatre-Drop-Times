@@ -83,15 +83,7 @@ async function fetchShowtimeHTMLFromDate(date){
         let html = await data.text()
         return htmlparse.parse(html)
     }catch{
-        while (true){
-            try{
-                let data = await fetch("https://terrell.filmalley.net/actions/moviemanager/performances/get-location-movies?locationId=1359&movieSchedule=1427&showDate="+date,{})
-                let html = await data.text()
-                return htmlparse.parse(html)
-            }catch(e){
-                continue
-            }
-        }
+        return null
     } 
 }
 
@@ -109,25 +101,25 @@ async function getCompiledShowtimeData(date){
 
 setInterval(async()=>{
     let date = moment().format('YYYY-MM-DD')
-    await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
+    let html = await fetchShowtimeHTMLFromDate(date)
+    if (html != null){
+        await createListingsFromShowtimePage(html,date)
+    }
 },timeToUpdateDataDaily)    
 
 let weeklyUpdateOffset = 1
 setInterval(async()=>{
     let date = moment().add(weeklyUpdateOffset,'days').format('YYYY-MM-DD')
-    await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
+    let html = await fetchShowtimeHTMLFromDate(date)
+    if (html != null){
+        await createListingsFromShowtimePage(html,date)
+    }
     weeklyUpdateOffset++
     if (weeklyUpdateOffset > 7){
         weeklyUpdateOffset = 1
     }
 },timeToUpdateDataWeekly)
 
-async function test(){
-    let date = moment().format('YYYY-MM-DD')
-    await createListingsFromShowtimePage(await fetchShowtimeHTMLFromDate(date),date)
-}
-
-test()
 module.exports = {getCompiledShowtimeData}
 
 }catch{}

@@ -3812,14 +3812,14 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189041",
                 "length": "188",
-                "ticketsSold": 0,
+                "ticketsSold": 4,
                 "theater": "5"
             },
             "6:30 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189042",
                 "length": "188",
-                "ticketsSold": 0,
+                "ticketsSold": 4,
                 "theater": "5"
             }
         },
@@ -3828,42 +3828,42 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189035",
                 "length": "102",
-                "ticketsSold": 5,
+                "ticketsSold": 35,
                 "theater": "4"
             },
             "12:30 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189036",
                 "length": "102",
-                "ticketsSold": 0,
+                "ticketsSold": 28,
                 "theater": "3"
             },
             "1:45 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189033",
                 "length": "102",
-                "ticketsSold": 0,
+                "ticketsSold": 17,
                 "theater": "4"
             },
             "4:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189029",
                 "length": "102",
-                "ticketsSold": 0,
+                "ticketsSold": 5,
                 "theater": "3"
             },
             "4:45 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189032",
                 "length": "102",
-                "ticketsSold": 0,
+                "ticketsSold": 9,
                 "theater": "4"
             },
             "7:15 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189030",
                 "length": "102",
-                "ticketsSold": 0,
+                "ticketsSold": 4,
                 "theater": "3"
             }
         },
@@ -3879,14 +3879,14 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189037",
                 "length": "2",
-                "ticketsSold": 0,
+                "ticketsSold": 7,
                 "theater": "2"
             },
             "6:45 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189039",
                 "length": "2",
-                "ticketsSold": 0,
+                "ticketsSold": 2,
                 "theater": "2"
             }
         },
@@ -3895,28 +3895,28 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189025",
                 "length": "190",
-                "ticketsSold": 6,
+                "ticketsSold": 71,
                 "theater": "6"
             },
             "2:45 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189026",
                 "length": "190",
-                "ticketsSold": 4,
+                "ticketsSold": 74,
                 "theater": "6"
             },
             "7:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189027",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 29,
                 "theater": "6"
             },
             "7:30 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189024",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 25,
                 "theater": "4"
             }
         },
@@ -3925,21 +3925,21 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189021",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 20,
                 "theater": "1"
             },
             "3:30 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189022",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 17,
                 "theater": "1"
             },
             "7:45 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189023",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 11,
                 "theater": "1"
             }
         },
@@ -3948,21 +3948,21 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189019",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 30,
                 "theater": "7"
             },
             "2:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189020",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 32,
                 "theater": "7"
             },
             "6:05 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189018",
                 "length": "190",
-                "ticketsSold": 2,
+                "ticketsSold": 45,
                 "theater": "7"
             }
         },
@@ -3971,14 +3971,14 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189016",
                 "length": "101",
-                "ticketsSold": 0,
+                "ticketsSold": 2,
                 "theater": "8"
             },
             "3:15 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189015",
                 "length": "101",
-                "ticketsSold": 0,
+                "ticketsSold": 2,
                 "theater": "8"
             },
             "6:20 pm": {
@@ -4003,7 +4003,7 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189071",
                 "length": "188",
-                "ticketsSold": 0,
+                "ticketsSold": 2,
                 "theater": "5"
             },
             "6:30 pm": {
@@ -4019,7 +4019,7 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189062",
                 "length": "102",
-                "ticketsSold": 0,
+                "ticketsSold": 4,
                 "theater": "4"
             },
             "12:30 pm": {
@@ -4047,7 +4047,7 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189064",
                 "length": "102",
-                "ticketsSold": 0,
+                "ticketsSold": 6,
                 "theater": "4"
             },
             "8:00 pm": {
@@ -4086,21 +4086,21 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189059",
                 "length": "190",
-                "ticketsSold": 2,
+                "ticketsSold": 24,
                 "theater": "6"
             },
             "2:45 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189058",
                 "length": "190",
-                "ticketsSold": 4,
+                "ticketsSold": 34,
                 "theater": "6"
             },
             "7:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189057",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 6,
                 "theater": "6"
             },
             "7:30 pm": {
@@ -4116,14 +4116,14 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189055",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 4,
                 "theater": "1"
             },
             "3:30 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189054",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 14,
                 "theater": "1"
             },
             "7:45 pm": {
@@ -4139,21 +4139,21 @@
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189051",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 4,
                 "theater": "7"
             },
             "2:00 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189050",
                 "length": "190",
-                "ticketsSold": 4,
+                "ticketsSold": 34,
                 "theater": "7"
             },
             "6:05 pm": {
                 "available": true,
                 "seatingURL": "https://411322.formovietickets.com:2235/T.ASP?WCI=BT&Page=PickTickets&SHOWID=189052",
                 "length": "190",
-                "ticketsSold": 0,
+                "ticketsSold": 2,
                 "theater": "7"
             }
         },
