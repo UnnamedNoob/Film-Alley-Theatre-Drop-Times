@@ -1,13 +1,11 @@
 try{
-const puppeteer = require('puppeteer')
+const child_proc = require("child_process");
 const datahandler = require('./datahandler.js')
-const cliProgress = require('cli-progress');
 const htmlparse = require('node-html-parser')
 const moment = require('moment')
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-
 const timeToUpdateDataDaily = 1000*60 // refreshes saved data every 1 minute
-const timeToUpdateDataWeekly = 1000*60 // refreshes saved data every 1 week
+const timeToUpdateDataWeekly = 1000*60 // refreshes saved data every 1 minute for each day of the week
 const theatreSeatCounts = {
     1: 101,
     2: 85,
@@ -21,7 +19,6 @@ const theatreSeatCounts = {
 
 async function createListingsFromShowtimePage(html, date){
     try{
-        console.log(`Starting scan for showings on ${date}`)
         let movies = html.querySelector('#now').querySelectorAll('.movie')
         let final = {}
         for (let movie of movies){
@@ -40,13 +37,19 @@ async function createListingsFromShowtimePage(html, date){
                 };
                 startTime = showing.querySelector('.tixLink').textContent.trim()
                 let seatingURL = showing.querySelector('.tixLink').getAttribute('href')
-                let movieStats = await getSeatingForShowing(showing.querySelector('.tixLink').getAttribute('href'))
-                showtimes[startTime] = {
-                    available:true,
-                    seatingURL,
-                    length,
-                    ticketsSold: movieStats.soldSeats,
-                    theater: findTheaterFromSeatCount(movieStats.totalSeats)
+                let movieStats = await getSeatingForShowing(seatingURL)
+                if (movieStats.success === true){
+                    showtimes[startTime] = {
+                        available:true,
+                        seatingURL,
+                        length,
+                        ticketsSold: movieStats.soldSeats,
+                        theater: findTheaterFromSeatCount(movieStats.totalSeats)
+                    }
+                }else{
+                    showtimes[startTime] = {
+                        available:false,
+                    }
                 }
             }
             final[title] = showtimes
@@ -57,24 +60,17 @@ async function createListingsFromShowtimePage(html, date){
 }
 
 async function getSeatingForShowing(url){
-    try{
-        let browser = await puppeteer.launch({headless:true,args:["--no-sandbox"]});
-        let page = await browser.newPage();
-        await page.goto(url);
-        await page.waitForSelector('.seat')
-        let data = await page.evaluate(() => document.querySelector('*').outerHTML);    
-        let parsedhtml = htmlparse.parse(data)
-        let totalSeats = parsedhtml.querySelectorAll('.seat').length
-        let soldSeats = parsedhtml.querySelectorAll('.unavailableSeat').length
-        let brokenSeats = parsedhtml.querySelectorAll('.brokenSeat').length
-        browser.close();
-        return {totalSeats,soldSeats,brokenSeats}
-
-    }catch(e){
-        console.log("Error when fetching seats")
-        console.log(e)
-        return
-    }
+    let sub = child_proc.fork("./serverfiles/puppeteerhandler.js");
+    sub.send({url});
+    return new Promise((resolve,reject)=>{
+        sub.on("message", (message) => {
+            sub.disconnect();
+            if (message === null){
+                return reject()
+            }
+            return resolve(message)
+          });
+    })
 }
 
 async function fetchShowtimeHTMLFromDate(date){
@@ -102,21 +98,28 @@ async function getCompiledShowtimeData(date){
 setInterval(async()=>{
     let date = moment().format('YYYY-MM-DD')
     let html = await fetchShowtimeHTMLFromDate(date)
+    console.log("Updating data for "+date)
     if (html != null){
         await createListingsFromShowtimePage(html,date)
     }
 },timeToUpdateDataDaily)    
 
+let weeklyscan = false
 let weeklyUpdateOffset = 1
 setInterval(async()=>{
-    let date = moment().add(weeklyUpdateOffset,'days').format('YYYY-MM-DD')
-    let html = await fetchShowtimeHTMLFromDate(date)
-    if (html != null){
-        await createListingsFromShowtimePage(html,date)
-    }
-    weeklyUpdateOffset++
-    if (weeklyUpdateOffset > 7){
-        weeklyUpdateOffset = 1
+    if (weeklyscan === false){
+        weeklyscan = true
+        let date = moment().add(weeklyUpdateOffset,'days').format('YYYY-MM-DD')
+        console.log("Updating data for "+date)
+        let html = await fetchShowtimeHTMLFromDate(date)
+        if (html != null){
+            await createListingsFromShowtimePage(html,date)
+            weeklyscan = false
+        }
+        weeklyUpdateOffset++
+        if (weeklyUpdateOffset > 7){
+            weeklyUpdateOffset = 1
+        }
     }
 },timeToUpdateDataWeekly)
 
